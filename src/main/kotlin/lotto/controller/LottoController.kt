@@ -11,6 +11,8 @@ class LottoController {
     fun run() {
         val money = InputView().readAmount()
         val winningLotto = getWinningLotto()
+        val lottos = LottoVendingMachine().issueLottos(money.lottoAmount())
+        OutputView().printLottos(lottos)
     }
 
     private fun getWinningLotto(): WinningLotto {
