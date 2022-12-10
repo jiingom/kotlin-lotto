@@ -6,6 +6,20 @@ class Lotto(private val numbers: List<Int>) {
         isLottoNumberDuplicated(numbers)
     }
 
+    fun contains(number: Int): Boolean {
+        return numbers.contains(number)
+    }
+
+    fun match(lotto: Lotto): Int {
+        var count = 0
+        for (number in numbers) {
+            if (lotto.contains(number)) {
+                count += 1
+            }
+        }
+        return count
+    }
+
     fun hasDuplicatedBonusNumber(bonus: Int): Boolean {
         return numbers.contains(bonus)
     }

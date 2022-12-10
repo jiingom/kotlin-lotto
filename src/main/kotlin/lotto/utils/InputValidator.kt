@@ -1,5 +1,6 @@
 package lotto.utils
 
+import lotto.domain.Lotto
 import lotto.domain.Money
 import lotto.utils.Constants.LOTTO_NUMBER
 import lotto.utils.Constants.MAXIMUM_LOTTO_NUMBER
